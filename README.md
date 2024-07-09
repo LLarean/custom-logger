@@ -9,3 +9,4 @@ The work is in progress
 - [ ] Integration of tests
 - [ ] Functional expansion
 - [ ] Preparing a package for integration into third-party projects
+- [ ] Come up with an implementation of logs when calling asynchronous methods (?)
