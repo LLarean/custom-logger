@@ -1,4 +1,4 @@
-# Logger for Unity3D
+# ![unity](https://img.shields.io/badge/Unity-100000?style=for-the-badge&logo=unity&logoColor=white) EnhancedLogger
 
 [![Releases](https://img.shields.io/github/v/release/llarean/custom-logger)](https://github.com/llarean/custom-logger/releases)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/LLarean/custom-logger/blob/master/LICENSE.txt)
