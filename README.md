@@ -19,11 +19,24 @@ Originally created to address limitations of Unity's default logging system, thi
 - Color-coded warnings and errors
 - Development/build mode detection
 
-### In development:
-- Runtime filtering and log levels configuration
-- Editor window for log management
-- File logging support
-- Performance optimizations
-
 ### Installation
-- Copy EnhancedLogger.cs to your project's Scripts/Utilities folder
+- Copy `SmartLogger.cs` to your project's Scripts/Utilities folder
+
+### Improvement Roadmap
+
+- Better Documentation
+  - Usage examples & integration guide
+  - Common issues FAQ
+- Editor Configuration Window
+  - Visual log level controls
+  - Color customization
+  - Settings presets
+- Tag Filtering
+  - [LogTag("Category")] attribute support
+  - Tag-based log enabling/disabling
+- Log Export
+  - File output (.txt/.json)
+  - Optional analytics integration
+- Testing
+  - Core functionality unit tests
+
