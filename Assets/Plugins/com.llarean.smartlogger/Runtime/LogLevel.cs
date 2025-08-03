@@ -1,4 +1,4 @@
-﻿namespace Utilities.Logging
+﻿namespace SmartLogger
 {
     /// <summary>
     /// Defines logging severity levels for message filtering.

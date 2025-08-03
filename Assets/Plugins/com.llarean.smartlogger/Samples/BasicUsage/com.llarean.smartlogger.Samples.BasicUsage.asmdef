@@ -1,0 +1,16 @@
+{
+    "name": "com.llarean.smartlogger.Samples.BasicUsage",
+    "rootNamespace": "",
+    "references": [
+        "GUID:13506eb596217bb4ab52ba9761dbc84c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

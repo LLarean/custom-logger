@@ -1,36 +1,78 @@
 {
-  "name": "com.llarean.signal-system",
-  "displayName": "Signal System",
-  "version": "2.0.0",
-  "documentationUrl": "https://github.com/LLarean/EventBus",
-  "changelogUrl": "https://github.com/llarean/EventBus/releases",
-  "licensesUrl": "https://github.com/llarean/EventBus/blob/master/LICENSE.txt",
-  "description": "Type-safe messaging system for Unity using interface-based signals. Includes NUnit tests. Perfect for decoupled game architecture. Originally developed at Owlcat Games. Modified by LLarean.",
-   "dependencies": {
-    "com.unity.test-framework": "1.1.33",
-    "com.unity.ext.nunit": "2.0.5"
+  "name": "com.llarean.smartlogger",
+  "version": "0.2.0",
+  "displayName": "Smart Logger",
+  "description": "Advanced logging system for Unity with automatic caller information, performance optimization, and development-focused features. Enhances Unity's Debug.Log with context, configurability, and better performance for professional game development.",
+  "unity": "2020.3",
+  "unityRelease": "0f1",
+  "documentationUrl": "https://github.com/yourusername/unity-smart-logger/blob/main/Documentation~/index.md",
+  "changelogUrl": "https://github.com/yourusername/unity-smart-logger/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/yourusername/unity-smart-logger/blob/main/LICENSE.md",
+  "keywords": [
+    "logging",
+    "debug",
+    "development",
+    "console",
+    "utility",
+    "performance",
+    "debugging",
+    "tools",
+    "editor",
+    "runtime",
+    "profiling",
+    "diagnostics"
+  ],
+  "author": {
+    "name": "LLarean",
+    "email": "llarean@ya.ru",
+    "url": "https://github.com/LLarean"
   },
+  "contributors": [
+    {
+      "name": "LLarean",
+      "email": "llarean@ya.ru"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llarean/unity-smart-logger.git",
+    "revision": "main"
+  },
+  "bugs": {
+    "url": "https://github.com/llarean/unity-smart-logger/issues"
+  },
+  "homepage": "https://github.com/llarean/unity-smart-logger#readme",
+  "license": "MIT",
+  "type": "library",
+  "category": "Utilities",
+  "dependencies": {},
   "testables": [
-    "com.llarean.signal-system"
+    "com.llarean.smartlogger"
   ],
   "samples": [
     {
-      "displayName" : "Basic Usage",
-      "description" : "Demonstrates core functionality with save/load system example.",
-      "path" : "Samples~/SaveLoad"
+      "displayName": "Basic Usage Examples",
+      "description": "Simple examples demonstrating core SmartLogger functionality including basic logging, warnings, errors, and exception handling.",
+      "path": "Samples~/BasicUsage",
+      "interactiveImport": false
     }
   ],
-  "keywords": [
-	"messaging",
-    "signals",
-    "eventbus",
-    "event",
-	"architecture",
-    "interfaces"
-  ],
-  "author": {
-  "name": "LLarean",
-  "email": "llarean@yandex.ru",
-  "url": "https://github.com/LLarean"
-  }
+  "relatedPackages": {
+    "com.unity.test-framework": "1.5.1"
+  },
+  "scopedRegistries": [],
+  "hideInEditor": false,
+  "gitDependencies": {},
+  "versionDefines": [
+    {
+      "name": "com.unity.test-framework",
+      "expression": "1.5.1",
+      "define": "SMARTLOGGER_TESTS_AVAILABLE"
+    },
+    {
+      "name": "UNITY_EDITOR",
+      "expression": "",
+      "define": "SMARTLOGGER_EDITOR"
+    }
+  ]
 }

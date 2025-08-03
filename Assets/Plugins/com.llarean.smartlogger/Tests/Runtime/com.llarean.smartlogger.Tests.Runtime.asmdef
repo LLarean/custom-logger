@@ -1,10 +1,10 @@
 {
-    "name": "LLarean.SignalSystem.Tests.Runtime",
+    "name": "com.llarean.smartlogger.Tests.Runtime",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "LLarean.SmartLogger.Runtime"
+        "com.llarean.smartlogger.Runtime"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using UnityEditor;
-using Utilities.Logging;
 
-namespace Utilities.Logging.Editor
+namespace SmartLogger.Editor
 {
     public class SmartLoggerWindow : EditorWindow
     {

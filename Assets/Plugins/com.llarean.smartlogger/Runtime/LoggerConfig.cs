@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Utilities.Logging
+namespace SmartLogger
 {
     [CreateAssetMenu(fileName = "SmartLoggerConfig", menuName = "SmartLogger/Config")]
     public class LoggerConfig : ScriptableObject

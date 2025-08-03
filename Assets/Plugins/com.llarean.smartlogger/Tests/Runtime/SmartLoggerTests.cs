@@ -4,9 +4,9 @@ using System.Reflection;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
-using Utilities.Logging;
+using SmartLogger;
 
-namespace Utilities.Logging.Tests
+namespace SmartLogger.Tests
 {
     [TestFixture]
     public class SmartLoggerTests

@@ -25,17 +25,17 @@ namespace SmartLogger.Samples.BasicUsage
 
         private void Log()
         {
-            Utilities.Logging.SmartLogger.Log("Hello World!");
+            SmartLogger.Log("Hello World!");
         }
 
         private void LogWarning()
         {
-            Utilities.Logging.SmartLogger.LogWarning("Hello World!");
+            SmartLogger.LogWarning("Hello World!");
         }
 
         private void LogError()
         {
-            Utilities.Logging.SmartLogger.LogError("Hello World!");
+            SmartLogger.LogError("Hello World!");
         }
     }
 }

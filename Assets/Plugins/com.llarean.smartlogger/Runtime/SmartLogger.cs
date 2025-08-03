@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using Debug = UnityEngine.Debug;
 
-namespace Utilities.Logging
+namespace SmartLogger
 {
     public static class SmartLogger
     {
