@@ -3,8 +3,6 @@
   "version": "0.2.0",
   "displayName": "Smart Logger",
   "description": "Advanced logging system for Unity with automatic caller information, performance optimization, and development-focused features. Enhances Unity's Debug.Log with context, configurability, and better performance for professional game development.",
-  "unity": "2020.3",
-  "unityRelease": "0f1",
   "documentationUrl": "https://github.com/yourusername/unity-smart-logger/blob/main/Documentation~/index.md",
   "changelogUrl": "https://github.com/yourusername/unity-smart-logger/blob/main/CHANGELOG.md",
   "licensesUrl": "https://github.com/yourusername/unity-smart-logger/blob/main/LICENSE.md",
