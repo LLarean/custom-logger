@@ -8,13 +8,6 @@ using Debug = UnityEngine.Debug;
 
 namespace Utilities.Logging
 {
-    public enum LogLevel
-    {
-        Verbose = 0,
-        Important = 1,
-        Critical = 2
-    }
-
     public static class SmartLogger
     {
         /// <summary>
@@ -24,15 +17,9 @@ namespace Utilities.Logging
 #if UNITY_EDITOR
             true;
 #else
-            Debug.isDebugBuild;
+            Debug.isDebugBuild || LoggerConfig.Instance.EnableInBuild;
 #endif
         
-        /// <summary>
-        /// The minimum level of importance of the logs displayed
-        /// </summary>
-        private const LogLevel LogDisplayLevel = LogLevel.Verbose;
-        
-        // Кэш для оптимизации повторных вызовов из того же места
         private static readonly ConcurrentDictionary<string, string> CallerDataCache 
             = new ConcurrentDictionary<string, string>();
         
@@ -178,7 +165,7 @@ namespace Utilities.Logging
         /// </summary>
         private static bool ShouldLog(LogLevel importanceLevel)
         {
-            return IsDevelopmentModeEnabled && LogDisplayLevel <= importanceLevel;
+            return IsDevelopmentModeEnabled && LoggerConfig.Instance.LogDisplayLevel <= importanceLevel;
         }
 
         /// <summary>
@@ -242,7 +229,7 @@ namespace Utilities.Logging
         /// <summary>
         /// Get current log display level
         /// </summary>
-        public static LogLevel CurrentLogLevel => LogDisplayLevel;
+        public static LogLevel CurrentLogLevel => LoggerConfig.Instance.LogDisplayLevel;
 
         /// <summary>
         /// Clear the caller data cache (useful for memory management in long-running applications)
@@ -250,6 +237,14 @@ namespace Utilities.Logging
         public static void ClearCache()
         {
             CallerDataCache.Clear();
+        }
+        
+        /// <summary>
+        /// Get cache statistics for debugging
+        /// </summary>
+        public static (int count, int maxSize) GetCacheStats()
+        {
+            return (CallerDataCache.Count, LoggerConfig.Instance.MaxCacheSize);
         }
 
         #endregion
