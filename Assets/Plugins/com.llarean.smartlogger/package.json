@@ -1,0 +1,36 @@
+{
+  "name": "com.llarean.signal-system",
+  "displayName": "Signal System",
+  "version": "2.0.0",
+  "documentationUrl": "https://github.com/LLarean/EventBus",
+  "changelogUrl": "https://github.com/llarean/EventBus/releases",
+  "licensesUrl": "https://github.com/llarean/EventBus/blob/master/LICENSE.txt",
+  "description": "Type-safe messaging system for Unity using interface-based signals. Includes NUnit tests. Perfect for decoupled game architecture. Originally developed at Owlcat Games. Modified by LLarean.",
+   "dependencies": {
+    "com.unity.test-framework": "1.1.33",
+    "com.unity.ext.nunit": "2.0.5"
+  },
+  "testables": [
+    "com.llarean.signal-system"
+  ],
+  "samples": [
+    {
+      "displayName" : "Basic Usage",
+      "description" : "Demonstrates core functionality with save/load system example.",
+      "path" : "Samples~/SaveLoad"
+    }
+  ],
+  "keywords": [
+	"messaging",
+    "signals",
+    "eventbus",
+    "event",
+	"architecture",
+    "interfaces"
+  ],
+  "author": {
+  "name": "LLarean",
+  "email": "llarean@yandex.ru",
+  "url": "https://github.com/LLarean"
+  }
+}
