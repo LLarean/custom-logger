@@ -18,14 +18,14 @@ namespace SmartLogger.Editor
             EditorGUILayout.Space();
             
             EditorGUILayout.LabelField("Cache Statistics:");
-            var stats = SmartLogger.GetCacheStats();
+            var stats = Logger.GetCacheStats();
             EditorGUILayout.LabelField($"Cache Size: {stats.count}/{stats.maxSize}");
             
             EditorGUILayout.Space();
             
             if (GUILayout.Button("Clear Cache"))
             {
-                SmartLogger.ClearCache();
+                Logger.ClearCache();
             }
             
             EditorGUILayout.Space();

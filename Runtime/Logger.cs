@@ -8,7 +8,7 @@ using Debug = UnityEngine.Debug;
 
 namespace SmartLogger
 {
-    public static class SmartLogger
+    public static class Logger
     {
         /// <summary>
         /// Indicates whether logs should be displayed at all
